@@ -1,57 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <title>Daniel K Schliffka | Software Engineer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Daniel Schliffka</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        xmlns="http://www.w3.org/1999/html">
-    <link rel="stylesheet" type="text/css" href="static/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <!-- Header -->
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body id="welcome" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/index.html">Daniel Schliffka</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#welcome">
+			<img class="visible-md visible-lg"src="/images/dks-logo-white.svg" alt="dks-logo" width="75px"/>
+			<img class="visible-xs visible-sm"src="/images/dks-knight-white.svg" alt="dks-knight" width="30px"/>
+		  </a>
         </div>
-        <!-- Items -->
-        <div class="collapse navbar-collapse" id="topNavBar">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="/about.html">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; About Me
-                    </a>
-                </li>
-                <!---<li>
-                    <a href="/blog.txt">
-                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>&nbsp; Blog
-                    </a>
-                </li>--->
-                <li>
-                    <a href="/projects.html">
-                        <span class="glyphicon glyphicon-film" aria-hidden="true"></span>&nbsp; Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="/files/schliffka-resume.pdf">
-                        <span class="glyphicon glyphicon-share" aria-hidden="true"></span>&nbsp; R&eacute;sum&eacute;
-                    </a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>Daniel K Schliffka</h1>
+      <p>Software Engineer</p>
     </div>
-</nav>
-
-</body>
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-2">
+            <span class="glyphicon glyphicon-knight logo-med"></span>
+          </div>
+          <div class="col-sm-6">
+            <h2>About Me</h2>
+            <p>With an educational background in mathematics and computer science, I have furthered my software career in the design and support of public radio system infrastructure that is real-time and mission critical.</p>
+            <p>During this time, I have developed expertise in agile methodologies, automated build and delivery, and embedded software design.</p>
+            <br><button class="btn btn-default btn-lg" onclick="window.open('/files/resume.pdf')">View Resume</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container (Education Section) -->
+    <div id="education" class="container-fluid bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-2">
+            <span class="glyphicon glyphicon-education logo-med slideanim"></span>
+          </div>
+          <div class="col-sm-6">
+            <h2>Education</h2>
+            <h4>Harding University</h4>
+            <p><strong>Bachelor of Science: </strong>Computer Science (2013)</p>
+            <p><strong>Bachelor of Science: </strong>Mathematics (2013)</p>
+            <p>Harding University is a private faith based liberal arts university located in Searcy, AR. I graduated Magna Cum Laude with honors and a double major.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container (Experience Section) -->
+    <div id="experience" class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-2">
+            <span class="glyphicon glyphicon-globe logo-med slideanim"></span>
+          </div>
+          <div class="col-sm-6">
+            <h2>Experience</h2>
+            <h4>Motorola Solutions, Inc</h4>
+            <strong>Senior Software Engineer</strong> (2013-2016)
+            <ul>
+              <li>RF Site call processing and embedded services.</li>
+              <li>SIT Support lead: leverage end-to-end system knowledge to triage customer capabilities.</li>
+              <li>Developed automation scripts to facilitate test and performance analysis in areas like memory usage which improved productivity and reusability.</li>
+              <li>Reduced process overhead by over half within the tools team by helping provide specific toolchains to streamline the workflow for developers.</li>
+              <li>Migrated build and deploy framework to Waf (open source python based build automation).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container (Projects Section) -->
+    <div id="projects" class="container-fluid bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-2">
+            <span class="glyphicon glyphicon-wrench logo-med slideanim"></span>
+          </div>
+          <div class="col-sm-6">
+            <h2>Projects</h2>
+            <h4>A collection of substantial works: academic, professional, and personal.</h4>
+            <!-- Project 1 -->
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-2">
+            <a href="https://rstatcat.herokuapp.com" alt="Runner Management System">
+            <img class="img-responsive" src="https://www.djangoproject.com/s/img/icon-touch.e4872c4da341.png" alt="Python-Django Framework" >
+            </a>
+            <font size="1" align="left">Source: <a href="https://www.djangoproject.com">Django Project</a></font>
+            </span>
+          </div>
+          <div class="col-sm-6">
+            <h4 class="media-heading">Runner Management System</h4>
+            <p>A web app to provide cross country coaches with a way to track and analyze the weekly race performance of a team of runners.</p>
+            <p>Django-python implementation deployed on Heroku.<br>
+              <a href="https://github.com/dschliffka/rms">https://github.com/dschliffka/rms</a><br>
+              <a href="https://rstatcat.herokuapp.com">https://rstatcat.herokuapp.com</a>
+            </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <!-- Project 2 -->
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-2">
+            <a href="/files/fractals.pdf" target="_blank">
+            <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Mandel_zoom_00_mandelbrot_set.jpg" alt="Mandelbrot Set">
+            </a>
+            <font size="1">Source: <a href="https://commons.wikimedia.org/wiki/File:Mandel_zoom_00_mandelbrot_set.jpg">Wikimedia Commons</a></font>
+          </div>
+          <div class="col-sm-6">
+            <h4 class="media-heading">Fractal Geometry and Networking Applications</h4>
+            <p>A mathematical analysis of the dimension of fractals, comparison with self-similar networks, and how this helps quantify physical processes of a network.</p>
+            <p>An academic research paper while at Harding University.<br>
+              <a href="/files/fractals.pdf" target="_blank">Fractal Geometry and Networking Applications</a>
+            </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <!-- Project 3 -->
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-2">
+            <a>
+            <img class="img-responsive" src="https://doc.qt.io/images/qt-logo.svg" alt="Qt Framework">
+            </a>
+            <font size="1">Source: <a href="https://doc.qt.io/images/qt-logo.svg">qt.io</a></font>
+          </div>
+          <div class="col-sm-6">
+            <h4 class="media-heading">Sitewatch</h4>
+            <p>A product tool innovation that provides a statistical view of RF traffic to elevate the visibility of call information and track indicators of site health.</p>
+            <p>Received Gold recognition in the Motorola Solutions ‘Project Alpha’ innovation campaign for contributions to Operational Efficiency.<br>
+              Designated as team lead of four developers working to implement and present our innovation idea, which was then chosen for demonstration at the Alpha Showcase.
+            </p>
+            <p>Proprietary, Motorola Solutions (2015)</p>
+          </div>
+        </div>
+        <!-- More Button -->
+        <br>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+            <button id="extra-project-btn" class="btn btn-default btn-lg btn-block extra-project-btn" onclick="$('.extra-projects').css('display', 'block'); $('.extra-project-btn').css('display', 'none');">View All</button>
+          </div>
+        </div>
+        <div class="extra-projects" style="display:none">
+          <br>
+          <!-- Project 4 -->
+          <div class="row">
+            <div class="col-sm-offset-2 col-sm-2">
+              <a href="/files/integer-partitions.pdf" target="_blank" alt="Young's Partition Diagram">
+              <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Ferrer_partitioning_diagrams.svg" alt="Young's Partition Diagram">
+              </a>
+              <font size="1">Source: <a href="https://upload.wikimedia.org/wikipedia/commons/d/d8/Ferrer_partitioning_diagrams.svg">Wikimedia Commons</a></font>
+            </div>
+            <div class="col-sm-6">
+              <h4 class="media-heading">Integer Partitions</h4>
+              <p>A combinatorial investigation into the cardinality and arrangement of successive natural numbers.</p>
+              <p>An academic research paper while at Harding University.<br>
+                <a href="/files/integer-partitions.pdf" target="_blank">Integer Partitions</a>
+              </p>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="row" style="display:none">
+            <div class="col-sm-offset-2 col-sm-2">
+              <a href="...">
+              <img class="img-responsive" src="..." alt="...">
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <h4 class="media-heading">Media heading</h4>
+              ........
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-2">
+            <span class="glyphicon glyphicon-send logo-med slideanim"></span>
+          </div>
+          <div class="col-sm-6 form-group">
+            <h2>CONTACT</h2>
+            <p>Connect with me for more great ideas.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-2"></div>
+          <div class="col-sm-6">
+            <p><span class="glyphicon glyphicon-map-marker right-gutter"></span> Chicago, US</p>
+            <p><span class="glyphicon glyphicon-ok-sign right-gutter"></span> <a href="https://github.com/dschliffka" title="github">github.com/dschliffka</a></p>
+            <p><span class="glyphicon glyphicon-ok-sign right-gutter"></span> <a href="https://www.linkedin.com/in/daniel-schliffka" title="linkedin">www.linkedin.com/in/daniel-schliffka</a></p>
+            <p><span class="glyphicon glyphicon-envelope right-gutter"></span>
+              <a href="http://www.google.com/recaptcha/mailhide/d?k=01yLexiKcHH2_9orw4MUXYmA==&amp;c=eKL4jmoTVbyVh4d3r7SRaDM6Iy-eWxfVtLFNSUJ-7kQ=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01yLexiKcHH2_9orw4MUXYmA\x3d\x3d\x26c\x3deKL4jmoTVbyVh4d3r7SRaDM6Iy-eWxfVtLFNSUJ-7kQ\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">i...</a>@danielschliffka.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid text-center bg-grey">
+      <a href="#welcome" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p>Bootstrap theme adapted with help<br>from <a href="http://getbootstrap.com" title="bootstrap">getbootstrap.com</a> and <a href="http://www.w3schools.com" title="w3schools">www.w3schools.com</a></p>
+    </footer>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#welcome']").on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+        
+        $(window).scroll(function() {
+          $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+      
+            var winTop = $(window).scrollTop();
+              if (pos < winTop + 600) {
+                $(this).addClass("slide");
+              }
+          });
+        });
+      })
+      function gen_mail_to_link(lhs,rhs,subject) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");
+        document.write(rhs + "?subject=" + subject + "\">" + lhs + "@" + rhs + "<\/a>");
+      }
+    </script>
+  </body>
 </html>
