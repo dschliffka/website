@@ -4,6 +4,28 @@
     <title>Daniel K Schliffka | Software Engineer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Daniel K Schliffka | Software Engineer" />
+    <meta property="og:url" content="http://danielschliffka.com" />
+    <meta property="og:image" content="http://danielschliffka.com/images/dks-logo.png" />
+    <meta property="og:description" content="Connect with me for more great ideas." />
+    <meta property="og:site_name" content="danielschliffka.com" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -21,9 +43,9 @@
           <span class="icon-bar"></span>                        
           </button>
           <a class="navbar-brand" href="#welcome">
-			<img class="visible-md visible-lg"src="/images/dks-logo-white.svg" alt="dks-logo" width="75px"/>
-			<img class="visible-xs visible-sm"src="/images/dks-knight-white.svg" alt="dks-knight" width="30px"/>
-		  </a>
+            <img src="/images/dks-logo-white.svg" alt="dks-logo" width="65px"/>
+            <img style="display:none" src="/images/dks-knight-white.svg" alt="dks-knight" width="20px"/>
+          </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
@@ -44,14 +66,17 @@
     <div id="about" class="container-fluid">
       <div class="container">
         <div class="row">
-          <div class="col-sm-offset-2 col-sm-2">
-            <span class="glyphicon glyphicon-knight logo-med"></span>
+          <div class="col-xs-12 visible-xs-block">
+            <span class="glyphicon glyphicon-knight logo-med flip-glyphicon big-bottom-gutter"></span>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-offset-2 col-sm-6">
             <h2>About Me</h2>
             <p>With an educational background in mathematics and computer science, I have furthered my software career in the design and support of public radio system infrastructure that is real-time and mission critical.</p>
             <p>During this time, I have developed expertise in agile methodologies, automated build and delivery, and embedded software design.</p>
             <br><button class="btn btn-default btn-lg" onclick="window.open('/files/resume.pdf')">View Resume</button>
+          </div>
+          <div class="col-sm-2 hidden-xs">
+            <span class="glyphicon glyphicon-knight logo-med flip-glyphicon"></span>
           </div>
         </div>
       </div>
@@ -66,9 +91,11 @@
           <div class="col-sm-6">
             <h2>Education</h2>
             <h4>Harding University</h4>
-            <p><strong>Bachelor of Science: </strong>Computer Science (2013)</p>
-            <p><strong>Bachelor of Science: </strong>Mathematics (2013)</p>
             <p>Harding University is a private faith based liberal arts university located in Searcy, AR. I graduated Magna Cum Laude with honors and a double major.</p>
+            <br>
+            <p><strong>Bachelor of Science: </strong>
+            <br>Computer Science (May 2013)
+            <br>Mathematics (May 2013)</p>
           </div>
         </div>
       </div>
@@ -77,13 +104,14 @@
     <div id="experience" class="container-fluid">
       <div class="container">
         <div class="row">
-          <div class="col-sm-offset-2 col-sm-2">
-            <span class="glyphicon glyphicon-globe logo-med slideanim"></span>
+          <div class="col-xs-12 visible-xs-block">
+            <span class="glyphicon glyphicon-globe logo-med slideanim big-bottom-gutter"></span>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-offset-2 col-sm-6">
             <h2>Experience</h2>
             <h4>Motorola Solutions, Inc</h4>
-            <strong>Senior Software Engineer</strong> (2013-2016)
+            <p><strong>Senior Software Engineer</strong>
+            <br>(June 2013 - December 2016)</p>
             <ul>
               <li>RF Site call processing and embedded services.</li>
               <li>SIT Support lead: leverage end-to-end system knowledge to triage customer capabilities.</li>
@@ -91,6 +119,9 @@
               <li>Reduced process overhead by over half within the tools team by helping provide specific toolchains to streamline the workflow for developers.</li>
               <li>Migrated build and deploy framework to Waf (open source python based build automation).</li>
             </ul>
+          </div>
+          <div class="col-sm-2 hidden-xs">
+            <span class="glyphicon glyphicon-globe logo-med slideanim"></span>
           </div>
         </div>
       </div>
@@ -114,11 +145,12 @@
             <a href="https://github.com/dschliffka/locomotion/blob/master/README.md" target="_blank">
               <img class="img-responsive" src="http://imgur.com/pYYTRRM.png" alt="Locomotion" >
             </a>
+            <br>
           </div>
           <div class="col-sm-6">
             <h4 class="media-heading">Locomotion</h4>
-			<p>Senior capstone design. Worked in a team of four to implement an interactive video game interpretation of a lesser known board game.</p>
-			<p>Received first place as a team in the design of an interactive board game, as judged in categories of multi-player networking, artificial intelligence, front-end design, and general effectiveness.
+            <p>Senior capstone design. Worked in a team of four to implement an interactive video game interpretation of a lesser known board game.</p>
+            <p>Received first place as a team in the design of an interactive board game, as judged in categories of multi-player networking, artificial intelligence, front-end design, and general effectiveness.
               <br>
               <a href="https://github.com/dschliffka/locomotion">https://github.com/dschliffka/locomotion</a>
             </p>
@@ -133,6 +165,7 @@
               <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Mandel_zoom_00_mandelbrot_set.jpg" alt="Mandelbrot Set">
             </a>
             <font size="1">Source: <a href="https://commons.wikimedia.org/wiki/File:Mandel_zoom_00_mandelbrot_set.jpg">Wikimedia Commons</a></font>
+            <br>
           </div>
           <div class="col-sm-6">
             <h4 class="media-heading">Fractal Geometry and Networking Applications</h4>
@@ -151,6 +184,7 @@
             <img class="img-responsive" src="https://www.djangoproject.com/s/img/icon-touch.e4872c4da341.png" alt="Python-Django Framework" >
             </a>
             <font size="1" align="left">Source: <a href="https://www.djangoproject.com">Django Project</a></font>
+            <br>
           </div>
           <div class="col-sm-6">
             <h4 class="media-heading">Runner Management System</h4>
@@ -178,6 +212,7 @@
               <img class="img-responsive" src="https://doc.qt.io/images/qt-logo.svg" alt="Qt Framework">
               </a>
               <font size="1">Source: <a href="https://doc.qt.io/images/qt-logo.svg">qt.io</a></font>
+              <br>
             </div>
             <div class="col-sm-6">
               <h4 class="media-heading">Sitewatch</h4>
@@ -197,6 +232,7 @@
               <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Ferrer_partitioning_diagrams.svg" alt="Young's Partition Diagram">
               </a>
               <font size="1">Source: <a href="https://upload.wikimedia.org/wikipedia/commons/d/d8/Ferrer_partitioning_diagrams.svg">Wikimedia Commons</a></font>
+              <br>
             </div>
             <div class="col-sm-6">
               <h4 class="media-heading">Integer Partitions</h4>
@@ -211,8 +247,8 @@
           <!-- Project template -->
           <div class="row" style="display:none">
             <div class="col-sm-offset-2 col-sm-2">
-              <a href="...">
-              <img class="img-responsive" src="..." alt="...">
+              <a href="">
+              <img class="img-responsive" src="" alt="">
               </a>
             </div>
             <div class="col-sm-6">
@@ -220,8 +256,6 @@
               ........
             </div>
           </div>
-          <br>
-          <br>
         </div>
       </div>
     </div>
@@ -230,16 +264,19 @@
     <div id="contact" class="container-fluid bg-white">
       <div class="container">
         <div class="row">
-          <div class="col-sm-offset-2 col-sm-2">
-            <span class="glyphicon glyphicon-send logo-med slideanim"></span>
+          <div class="col-xs-12 visible-xs-block">
+            <span class="glyphicon glyphicon-send logo-med slideanim big-bottom-gutter"></span>
           </div>
-          <div class="col-sm-6 form-group">
+          <div class="col-sm-offset-2 col-sm-6 form-group">
             <h2>CONTACT</h2>
             <p>Connect with me for more great ideas.</p>
           </div>
+          <div class="col-sm-2 hidden-xs">
+            <span class="glyphicon glyphicon-send logo-med slideanim"></span>
+          </div>
         </div>
         <div class="row">
-          <div class="col-sm-offset-2 col-sm-2"></div>
+          <div class="col-sm-2"></div>
           <div class="col-sm-6">
             <p><span class="glyphicon glyphicon-map-marker right-gutter"></span> Chicago, US</p>
             <p><span class="glyphicon glyphicon-ok-sign right-gutter"></span> <a href="https://github.com/dschliffka" title="github">github.com/dschliffka</a></p>
@@ -255,7 +292,8 @@
       <a href="#welcome" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
       </a>
-      <p>Bootstrap theme adapted with help<br>from <a href="http://getbootstrap.com" title="bootstrap">getbootstrap.com</a> and <a href="http://www.w3schools.com" title="w3schools">www.w3schools.com</a></p>
+      <p>Bootstrap theme adapted with a little help<br>from <a href="http://getbootstrap.com" title="bootstrap">getbootstrap.com</a> and <a href="http://www.w3schools.com" title="w3schools">www.w3schools.com</a></p>
+      <br>
     </footer>
     <script>
       $(document).ready(function(){
